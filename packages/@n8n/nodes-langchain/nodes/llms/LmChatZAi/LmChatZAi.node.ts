@@ -60,7 +60,7 @@ export class LmChatZAi implements INodeType {
 		],
 		requestDefaults: {
 			ignoreHttpStatusErrors: true,
-			baseURL: '={{ $credentials?.baseURL }}',
+			baseURL: '={{ $credentials?.url }}',
 		},
 		properties: [
 			getConnectionHintNoticeField([NodeConnectionTypes.AiChain, NodeConnectionTypes.AiAgent]),
